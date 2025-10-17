@@ -13,4 +13,4 @@ A Chrome extension that displays how long each event lasts directly inside Googl
 3. Click **Load unpacked**  
 4. Select this folder  
 
-Published on the [Chrome Web Store](https://chrome.google.com/webstore/detail/pefipdhbcfmfncaopkegoonbncfcfaej)
+Published on the [Chrome Web Store]([https://chrome.google.com/webstore/detail/pefipdhbcfmfncaopkegoonbncfcfaej](https://chromewebstore.google.com/detail/pefipdhbcfmfncaiopkegoonbncfcaej?utm_source=item-share-cb))
