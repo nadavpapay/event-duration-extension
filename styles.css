@@ -1,0 +1,29 @@
+/* Duration element styles */
+.event-duration {
+    position: relative;
+    display: inline-block;
+    font-family: "Google Sans Text", "Google Sans", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.2;
+    margin: 0 0 0 4px;
+    white-space: nowrap;
+    opacity: 1;
+}
+
+/* Past events */
+[role="button"][data-eventchip] .event-duration.past,
+div[jscontroller] [role="button"][data-eventchip] .event-duration.past {
+    color: rgba(0, 0, 0, 0.8) !important;
+    font-weight: normal !important;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Future events */
+[role="button"][data-eventchip] .event-duration.future,
+div[jscontroller] [role="button"][data-eventchip] .event-duration.future {
+    color: #FFFFFF !important;
+    font-weight: normal !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+

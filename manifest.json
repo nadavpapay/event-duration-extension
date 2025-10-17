@@ -1,0 +1,39 @@
+{
+   "action": {
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "background.js",
+      "type": "module"
+   },
+   "content_scripts": [ {
+      "css": [ "styles.css" ],
+      "js": [ "content.js" ],
+      "matches": [ "https://calendar.google.com/*" ],
+      "run_at": "document_end",
+      "type": "module"
+   } ],
+   "description": "Easily see how long your events and meetings are. This extension adds a duration label (e.g. '1h 30m') directly to each event.",
+   "differential_fingerprint": "1.6f7f5f9c8b458bec9d2253c75aea4bcaf66a5c37c5b78ca646a7a088e84433c0",
+   "host_permissions": [ "https://www.googleapis.com/*", "https://calendar.google.com/*" ],
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnJZOwh89Bgh9Bnthu57rBuy0xLrOWtfGMVWbZoEGcSJclgCM3AscQRRxf2jA/J60WpQntQjBL8i7x3Rr640gYj7TnMEUjfytnxbZQUryGalpFDA1x13ET0Y2nqm5bwRyh/AaHFXlAwuo+48ep+Ofh9U51dAE1aA9QvPGvoMaEdGzUjuZSoXWggyLYf+onlkuGAZqQPof2kCnE1o5vkE5gN7hT2OjE3KnViBOYxztBtnhr5cjQ7Up/ehB+4kxpwNaiy0Lw4e1P0bMo8gYMQ4ukfmcPBgiINsOgP2JukSzCwWSz8PsEmUpVUDlpN7AYkaQPItM5c2RkHLq76Wer1KmqQIDAQAB",
+   "manifest_version": 3,
+   "name": "Event & Meeting Duration for Google Calendar™",
+   "oauth2": {
+      "client_id": "33462401620-ss168p19p84s9v6nm2b0spl1l7kg56rd.apps.googleusercontent.com",
+      "scopes": [ "https://www.googleapis.com/auth/calendar.readonly" ]
+   },
+   "permissions": [ "identity", "storage", "tabs" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.3",
+   "web_accessible_resources": [ {
+      "matches": [ "https://calendar.google.com/*" ],
+      "resources": [ "utils/*.js" ],
+      "type": "module"
+   } ]
+}
